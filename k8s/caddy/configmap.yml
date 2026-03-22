@@ -5,10 +5,10 @@ metadata:
   namespace: homelab
 data:
   Caddyfile: |
-    ha.home.local {
+    ha.home.lan {
       reverse_proxy homeassistant.homelab.svc.cluster.local:8123
     }
 
-    plex.home.local {
+    plex.home.lan {
       reverse_proxy plex.homelab.svc.cluster.local:32400
     }
